@@ -1,306 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Akshata Jinagond  </title>
-     <link rel="icon" type="image/x-icon" href="https://i.im.ge/2022/09/11/O4awEr.1662295244854.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-</head>
-<body>
+    <title>Portfolio</title>
 
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Port<span>folio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#project" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+    <link rel="stylesheet" href="src/mobile-style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+    <header id="main-header">
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-circle-notch"></i> PG°
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#main-header"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-project">WORK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/profile.pdf">RESUME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-contact">CONTACT</a>
+              </li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="container text-left header-ctr">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-sm-12 header-text">
+            <h2>
+              #
+              <a
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "I am a CS Undergrad.", "I am a full Stack Web Developer.", "I Love to Design & Code." ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h2>
+
+            <h1>Hello world! my name is Akshata Jinagond</h1>
+            <h5>
+              And I am a Java Backend Developer.
+            </h5>
+
+            <div class="text-left">
+              <a
+                class="button btn btn-light px-5 py-1.5 sayhi"
+                href="mailto:akshatajinagond59@gmail.com?Subject=Hello%20Pavan"
+                target="_top"
+                >Say Hi!</a
+              >
             </div>
+            <br />
+          </div>
+          <div class="col-md-5 col-sm-12 main-img h-25">
+            <img src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" alt="mac" class="programmin-img"/>
+          </div>
         </div>
-    </nav>
+      </div>
+    </header>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Akshata Jinagond</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="https://drive.google.com/file/d/16GIlnA_SVClooe2HBG6Y_TYKE2dytiVQ/view?usp=sharing" target="_blank">Resume</a>
+    <main id="main-screen">
+      <section class="section-1">
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              I'm a little bit of a geek - I have to be the first person to get
+              new things when they come out. I always want to buy and try new
+              gadgets.
+            </p>
+            <p class="text-right">- Tom Felton</p>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              Someone who I would describe as a 'geek' or 'nerd' is a person who
+              loves something to its greatest extent and then look for other
+              people who love it the same way so they can celebrate loving it
+              together.
+            </p>
+            <p class="text-right">- Wil Wheaton</p>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              No longer is a geek identifiable by a pale complexion,
+              black-rimmed glasses, a bowling shirt that says 'Nerd World
+              Order'. No, geeks are everywhere. And they're cool!
+            </p>
+            <p class="text-right">- Faith Salie</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-about" class="section-2">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="pray">
+                <img src="assets/my-pic.jpg" alt="my-pic" />
+              </div>
             </div>
-        </div>
-    </section>
+            <div class="col-md-6 col-12">
+              <div class="panel text-left">
+                <h2>About</h2>
+                <h3>Akshata Jinagond</h3>
+                <h4>Student at Masai School</h4>
+                <p>
+                  A passionate JAVA Back-End Developer, Strong in design and integration with intuitive problem-solving skills. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start the career as Java Developer with a reputed firm driven by technology
+                </p>
+                <h4>SKILLS</h4>
+                <p>
+                 Java, Javascript, HTML5, CSS3,<br />
+                  Spring Boot, hibernate, Aws, MySQL,<br />
+                  Git, Github, VSCode, Eclipse
+                </p>
 
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                <!-- <img src="images/selfphoto.png"> -->
-                <img src="https://i.im.ge/2022/09/11/O4awEr.1662295244854.jpg"  >
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Akshata Jinagond and I'm a <span class="typing-2"></span></div>
-                    <p>A passionate JAVA Back-End Developer, Strong in design and integration with intuitive problem-solving skills. Proficient in JAVA, HTML,CSS, JAVASCRIPT, and SQL. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start the career as Java Developer with a reputed firm driven by technology.</p>
-                    <!-- <a href="#">Download CV</a> -->
-                </div>
+                <!-- <h6>You can find me everywhere, <b>@</b></h6> -->
+                <br />
+
+                <a class="btn btn-light px-3 py-1.5" href="assets/profile.pdf"
+                  >Download Resume</a
+                >
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- services section start -->
-    <!-- <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My services</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
-                        <p>Proficient in providing web designs.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">REST API</div>
-                        <p>Providing exceptional Rest API's.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">System Design</div>
-                        <p>Proficient in Low Level System Designs</p>
-                    </div>
-                </div>
-               </div>
+      <section class="section-3 container-fluid p-0">
+        <div class="container-fluid text-center">
+          <div
+            class="numbers d-flex flex-md-row flex-wrap justify-content-center"
+          >
+            <div class="rect">
+              <h1>100</h1>
+
+              <a href="www.linkedin.com/in/akshata-jinagond"
+                ><p><i class="fab fa-linkedin"></i> Linkedin</p></a
+              >
             </div>
-        </div>
-    </section> -->
-
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-
-                    <div class="skills-images" id="java_img">
-                        <img src="https://cdn.freebiesupply.com/logos/large/2x/java-logo-png-transparent.png" alt="javaSvg">
-                    </div>
-
-                    <div class="skills-images" id="hibernate_img">
-                        <img src="https://www.filepicker.io/api/file/8uEtDJrSumZ4a9NzWGjR" alt="">
-                    </div>
-
-                    
-                    <div class="skills-images">
-                        <img src="https://www.clipartkey.com/mpngs/m/320-3206291_mysql-mysql-logo.png" alt="">
-                    </div>
-
-                    
-                    <div class="skills-images" id="github_img">
-                        <img src="https://th.bing.com/th/id/OIP.D_Gm8IGCvkqmOgtU2hueVwHaHS?pid=ImgDet&rs=1" alt="">
-                    </div>
-
-                </div>
-                <div class="column right">
-                    <div class="skills-images" id="spring_img">
-                        <img src="https://th.bing.com/th/id/OIP.5SmoJWwtoprjZbJpaXVunQHaD1?pid=ImgDet&rs=1" alt="">
-                    </div>
-
-                    <div class="skills-images" id="aws_img">
-                        <img src="https://th.bing.com/th/id/OIP.yVkGWFGnh3Sfp5Kjfa8CIQHaEw?pid=ImgDet&rs=1" alt="">
-                    </div>
-
-                    <div class="skills-images" id="html_img">
-                        <img src="https://th.bing.com/th/id/R.02a75f50e986b7d3d8341655e38bf472?rik=WXOUHMnbdKTzkw&riu=http%3a%2f%2fclonefutura.com%2fUploads%2fCourses%2fFeaturedImage%2fa5155287-a500-43a9-9dae-4812be9ed744%2fHTML5+%26+CSS3.png&ehk=NyxLsnAxK0qd6d6S5uUs5FUjewvJP4ByqWe2BSkAduE%3d&risl=&pid=ImgRaw&r=0" alt="">
-                    </div>
-
-                    <div class="skills-images" id="js_img" >
-                        <img src="https://th.bing.com/th/id/OIP.dRsGeh5soGYbW04RWzPWxAAAAA?pid=ImgDet&rs=1" alt="">
-                    </div>
-
-                </div>
+            <div class="rect">
+              <h1>120</h1>
+              <a href="https://github.com/akshatajinagond91" target="_blank"
+                ><p><i class="fab fa-github"></i> Github</p></a
+              >
             </div>
-        </div>
-    </section>
-
-    <!-- project section start -->
-    <section class="project" id="project">
-        <div class="max-width">
-            <h2 class="title">Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/projectheadphone.jpeg"  alt="">
-                        <div class="text">Intern Theory</div>
-                        <p>Collaborative one week Project of 6 Members using Java Script, HTML, CSS My
-                            Responsibility- creation of Home page and Footer</p>
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/vinitshahilverma/Intern-Theory-Project" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://headphonix.netlify.app/" target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/projectheadphone.jpeg" alt="">
-                        <div class="text">News App</div>
-                        <p>An idivisual project done by me using Java Script, HTML, CSS  </p>
-                           
-                        <p class="techStack">Tech Used: Html, CSS, JavaScript</p>
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/shriram083/Dermstore_Clone" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://relaxed-druid-2f6bf5.netlify.app/" target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="card">
-                    <div class="box">
-                        <img src="./images/per_portfolio.png" alt="">
-                        <div class="text">Personal website</div>
-                        <p>This my first project of Personal Website I make this when I was beginner </p>
-                        <p class="techStack">Tech Used: Html, CSS, SCSS , JavaScript</p>
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/codeirax/portfolio" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://codeirax.github.io/portfolio/" target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <!-- next project adding -->
-            <div class="card">
-                <div class="box">
-                   <img src="images/project2.jpeg"  >
-                    <div class="text">online medicines shopping </div>
-                    <p>Collaborative one week Project of 5 Members using Java Script,
-                        HTML, CSS My Responsibility- Product page and refer a friend page </p>
-                    <div class="repo-links">
-                        <div class="repo-div">
-                            <span>  <a href="https://github.com/mohitbirla20/team_1mg.git" target="_blank"> Git Repo </a></span>
-                        </div>
-                        <div class="demo-div">
-                            <span> <a href="https://frolicking-macaron-68e3c3.netlify.app/" target="_blank">  Live Site  </a></span>
-                        </div>
-                    </div>
-                </div>
+            <div class="rect">
+              <h1>300</h1>
+              <a href="https://instagram.com/akshata_jinagond/" target="_blank"
+                ><p><i class="fab fa-instagram"></i> Instagram</p></a
+              >
             </div>
-
-
-                       </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Got a project? Reach out and let's work together on something exciting. Big or small. Mobile or web.</p>
-                    <div class="icons">
-                        <div class="row">
-                            <a href="mailto:akshatajinagond59@gmail.com"> <i class="fas fa-envelope"></i> </a>
-                            <div class="info">
-                                <div class="head"></div>
-                                <div class="sub-title">  <a href="mailto:akshatajinagond59@gmail.com"> akshatajinagond59@gmail.com</a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a href="www.linkedin.com/in/akshata-jinagond" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-                            <div class="info">
-                                <!-- <div class="head">Address</div> -->
-                                <div class="sub-title">  <a href="www.linkedin.com/in/akshata-jinagond" target="_blank">akshata-jinagond</a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a href="https://github.com/akshatajinagond91" target="_blank"> <i class="fab fa-github"></i> </a>
-                            <div class="info">
-                                <!-- <div class="head">Email</div> -->
-                                <div class="sub-title"> <a href="https://github.com/akshatajinagond91" target="_blank" >akshatajinagond91</a> </div>
-                            </div>
-                        </div>
-                          
-                        <div class="row">
-                            <a > <span class="material-symbols-outlined">
-                                phone_iphone
-                                </span> </a>
-                           <div class="info">
-                               <!-- <div class="head">Email</div> -->
-                               <div class="sub-title"> +91 8495065791 </div>
-                           </div>
-                       </div>
-                        
-
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
+      <section id="main-project" class="section-4">
+        <div class="container text-center">
+          <h1 class="text-dark">Projects I have done</h1>
+          <p class="text-secondary">Kindly visit My Github Profile for My Projects: <a href="https://github.com/akshatajinagond91">akshatajinagond91</a></p>
+        </div>
+        <div class="cards">
+          <div class="d-flex flex-md-row flex-wrap justify-content-center">
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img src="assets/background.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">My Portfolio</h4>
+                <p class="card-text">
+                  Created my personal/portfolio website using technologies like
+                  HTML5, CSS3, BOOTSTRAP v4.3 and JavaScript.
+                </p>
+              </div>
+              <div class="card-body">
+                <a
+                  href="https://github.com/akshatajinagond91/akshatajinagond91.github.io"
+                  target="_blank"
+                  class="card-link"
+                  >Git link</a>
+                
+              </div>
             </div>
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img
+                src="assets/background-def.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title"><a href="https://ephemeral-pika-cd9a31.netlify.app/">Intern Theory</a> </h4>
+                <p class="card-text">This project helps in enrolling online internship. Developed by using CSS3, HTML5, Java Script</p>
+              </div>
+              <div class="card-body">
+                <a href="https://github.com/vinitshahilverma/Intern-Theory-Project" class="card-link">Git link</a>
+              </div>
+            </div>
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img
+                src="assets/pic3-1.jpgi" 
+                
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">New Project 3</h4>
+                <p class="card-text">Not Listed Yet.</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Git link</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- footer section start -->
+      <section id="main-contact" class="section-5">
+        <div class="contact">
+          <div class="form-container">
+            <h2>Contact Me</h2>
+            <form
+              method="POST"
+              action="https://formspree.io/akshatajinagond59@gmail.com"
+            >
+              <div class="input-field">
+                <input type="text" name="name" required="" />
+                <label>Name*</label>
+              </div>
+              <div class="input-field">
+                <input type="email" name="email" required="" />
+                <label>Email*</label>
+              </div>
+              <div class="input-field">
+                <textarea name="message" rows="5" required=""></textarea>
+                <label>Message*</label>
+              </div>
+              <input type="submit" name="" value="Send Message" class="btn" />
+            </form>
+          </div>
+        </div>
+        <div class="quote">
+          <h4>
+            Computers let you make mistake faster than any invention in human
+            history - with the posible exceptions of handguns and tequila.
+            <br />
+            <br /><b>- Someone on the Internet </b>
+          </h4>
+        </div>
+      </section>
+    </main>
+
     <footer>
-        <span class="far fa-copyright"></span> 2022 All Rights Reserved, Made with 💗 by
-        Akshata Jinagond.</span>
+      <div class="container-fluid p-0">
+        <div class="row text-left">
+          <div class="col-md-9">
+            <h4 class="text-light">Thank you</h4>
+            <p class="text-muted">For any suggestion you can mail me</p>
+            <p class="gmail"> akshatajinagond59@gmail.com</p>
+          </div>
+          <div class="col-md-3 follow">
+            <h4 class="text-light">Follow Me</h4>
+            <p class="text-muted">Let us be social</p>
+            <div class="column text-light">
+              <!-- <a href="https://www.linkedin.com/in/akshatajinagond91/"
+                ><i class="fab fa-linkedin"></i
+              ></a> -->
+              <a href="https://www.github.com/akshatajinagond91" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/akshujinagond.jinagond" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/akshata_jinagond/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.twitter.com/akshata-jinagond" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-5 text-center">
+        <p class="pt-2 text-muted">
+          Copyright ©2019 All rights reserved | This site is
+          <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by
+          <a class="sp" href="https://www.github.com/akshatajinagond91"
+            ><span> Akshata Jinagond </span></a
+          >
+        </p>
+      </div>
     </footer>
 
-  
-
-    <script src="script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/main.js"></script>
+  </body>
 </html>
