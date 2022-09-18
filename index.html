@@ -1,388 +1,597 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<html lang="en" class="fp-enabled" style="overflow: visible; height: initial;"><head>
 
-    <title>Portfolio</title>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="src/style.css" />
-    <link rel="stylesheet" href="src/mobile-style.css" />
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-  </head>
+   <title>Akshata Jinagond | Portfolio</title>
+<!--
+Elegance Template
+https://templatemo.com/tm-528-elegance
+-->
+   <!-- Additional CSS Files -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-  <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa fa-chevron-up" aria-hidden="true"></i>
-    </button>
-    <script>
-      var mybutton = document.getElementById("myBtn");
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 300 ||
-          document.documentElement.scrollTop > 300
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      function topFunction() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    </script>
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
-    <header id="main-header">
-      <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">
-            <i class="fas fa-circle-notch"></i> PG°
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <i class="fas fa-align-right text-light"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mr-auto"></div>
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#main-header"
-                  >HOME <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#main-about">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#main-project">WORK</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="assets/profile.pdf">RESUME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#main-contact">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="container text-left header-ctr">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-7 col-sm-12 header-text">
-            <h2>
-              #
-              <a
-                class="typewrite"
-                data-period="2000"
-                data-type='[ "I am a CS Undergrad.", "I am a full Stack Web Developer.", "I Love to Design & Code." ]'
-              >
-                <span class="wrap"></span>
-              </a>
-            </h2>
+   <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
 
-            <h1>Hello world! my name is Akshata Jinagond</h1>
-            <h5>
-              And I am a Java Backend Developer.
-            </h5>
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 
-            <div class="text-left">
-              <a
-                class="button btn btn-light px-5 py-1.5 sayhi"
-                href="mailto:akshatajinagond59@gmail.com?Subject=Hello%20Pavan"
-                target="_top"
-                >Say Hi!</a
-              >
+   <link rel="stylesheet" href="css/animate.css">
+
+   <link rel="stylesheet" href="css/templatemo-style.css">
+
+   <link rel="stylesheet" href="css/responsive.css">
+
+   
+   <link rel="icon" type="image/png" href="images/logo.jpg">
+   
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+   .btn {
+ background-color: #ddd;
+ border: none;
+ color: black;
+ padding: 10px 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 16px;
+}
+
+      .fa-2x{
+          margin:auto;
+          margin-top: 20%;
+        font-size:1.6em !important;
+    };
+
+
+.btnn:hover {
+ background-color: #f1f1f1;
+}
+       
+
+
+
+           .heading {
+             font-size: 15px;
+             margin-right: 15px;
+           }
+
+           .half{
+
+
+           }
+           .fa {
+             font-size: 15px;
+           }
+
+           .checked {
+             color: white;
+           }
+
+           .unchecked {
+             color: black;
+           }
+
+           /* Three column layout */
+           .side {
+             float: left;
+             width: 15%;
+             margin-top:10px;
+           }
+
+           .middle {
+             margin-top:10px;
+             float: left;
+             width: 70%;
+           }
+
+           /* Place text to the right */
+           .right {
+             text-align: right;
+           }
+
+           /* Clear floats after the columns */
+           .row:after {
+             content: "";
+             display: table;
+             clear: both;
+           }
+
+           /* The bar container */
+           .bar-container {
+             width: 100%;
+             background-color: #f1f1f1;
+             text-align: center;
+             color: white;
+           }
+
+
+           @media (max-width: 400px) {
+             .side, .middle {
+               width: 100%;
+             }
+             .right {
+               display: none;
+             }
+           }
+   </style>
+
+   
+   </head>
+   
+   <body class="fp-responsive fp-viewing-slide04" style="overflow: visible; height: initial;">
+   
+   <div id="video">
+           
+       <header id="header">
+           <div class="container-fluid">
+               <div class="navbar">
+                   <a href="#" id="logo" title="Elegance by TemplateMo">
+                       PORTFOLIO 
+                   </a>
+                   <div class="navigation-row">
+                       <nav id="navigation">
+                           <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                           <div class="nav-box navbar-collapse">
+                               <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                   <li data-menuanchor="slide01" class=""><a href="#slide01">Home</a></li>
+                                   <li data-menuanchor="slide02" class=""><a href="#slide02">About Me</a></li>
+                                   <li data-menuanchor="slide03" class=""><a href="#slide03">Projects</a></li>
+                                   <li data-menuanchor="slide04" class="active"><a href="#slide04">My Skills</a></li>
+                                   <!-- <li data-menuanchor="slide05" class=""><a href="#slide05">My Work</a></li> -->
+            
+                                   <li data-menuanchor="slide07"><a href="#slide06">Contact Me</a></li>
+                               </ul>
+                           </div>
+                       </nav>
+                   </div>
+               </div>
+           </div>
+       </header>
+
+       <video autoplay="" muted="" loop="" id="myVideo">
+         <source src="images/video-bg.mp4" type="video/mp4">
+       </video>
+
+       <div id="fullpage" class="fullpage-default fullpage-wrapper" style="height: 100%; position: relative; transform: translate3d(0px, 0px, 0px);">
+
+           <div class="section animated-row fp-section fp-table" data-section="slide01" data-fp-styles="null" data-anchor="slide01" style="height: 168px;"><div class="fp-tableCell" style="height: 168px;">
+               <div class="section-inner">
+                   <div class="welcome-box">
+                       <span class="welcome-first animate" data-animate="fadeInUp">Hello, I am,</span>
+                       <h1 class="welcome-title animate" data-animate="fadeInUp">Akshata Jinagond </h1>
+                       <p class="animate" data-animate="fadeInUp">Java developer<br></p>
+                        <div class="scroll-down next-section data-animate= animate" fadeinup""=""><img src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                   </div>
+               </div>
+           </div></div>
+
+           <div class="section animated-row fp-section fp-table" data-section="slide02" data-fp-styles="null" data-anchor="slide02" style="height: 168px;"><div class="fp-tableCell" style="height: 168px;">
+               <div class="section-inner">
+                   <div class="about-section">
+                       <div class="row justify-content-center">
+                           <div class="col-lg-8 wide-col-laptop">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                       <div class="about-contentbox">
+                                           <div class="animate" data-animate="fadeInUp">
+                                               <span>About Me</span>
+                                               <h2>Who am i?</h2>
+                                               <p> Done BCA From <strong>Rani Channamma University</strong> in <strong>Karnataka</strong></p>
+                                               <p>Quick learner and an aspiring full-stack web developer.Gone through 30 weeks of coding Bootcamp at Masai School.<br><br> I love to work on exciting projects that test what I've learnt, whilst being exposed to the power and potential of the ever-evolving technologies around us.<br><br> Looking forward to applying and enhancing my skills and knowledge as a developer.</p><br>
+                                             <a href="Akshata_Jinagond_resume.pdf" download="" > <button class="btn btnn" style="color: black;">Download Resume</button> </a> 
+                                           </div>
+                                           
+                                       </div>
+                                   </div>
+                                   <div class="col-md-6">
+                                       <figure class="about-img animate" data-animate="fadeInUp"><img src="images/myphoto.jpg  " style=" margin-top:150px; height:350px;width:320px" class="rounded" alt=""></figure>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div></div>
+
+
+           
+           <div class="section animated-row fp-section fp-table active fp-completely" data-section="slide03" data-fp-styles="null" data-anchor="slide03" style="height: 225px;"><div class="fp-tableCell" style="height: 225px;">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>PROJECTS</span>
+                            <h2>What I have done?</h2>
+                        </div>
+                        <div class="services-section">
+                            <div class="services-list owl-carousel owl-loaded owl-drag">
+                                
+                                
+                                
+                                
+                            <div class="owl-stage-outer" style="height:410px;"><div class="owl-stage" style="transform: translate3d(-1121px, 0px, 0px); transition: all 0s ease 0s; width: 3364px;"><div class="owl-item cloned" style="width: 343.667px; margin-right: 30px;"><div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box"  >
+                                        
+                                        <image src="images/InternTheory.JPG" style="height:200px"></image>
+                                         <h3>Intern Theory Clone Website</h3>
+                                        <p>This project helps people in applying for an online internship <br>
+                                         Tech Stack : HTML | CSS |Local Storage | Javascript <br>
+                                        <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/vinitshahilverma/Intern-Theory-Project" target="new"><strong >Source Code</strong></a></button>
+                                        <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://ephemeral-pika-cd9a31.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                         </p>
+                                                      
+                                    </div>
+                                </div></div><div class="owl-item cloned" style="width: 343.667px; margin-right: 30px;"><div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/NeededBike.JPG" style="height:200px"></image>
+                                        <h3>Neede Bike website clone</h3>
+                                        <p> This project helps in scheduling time and date for any task<br>
+                                         Tech Stack : HTML | CSS | Local Storage | Javascript <br>
+                                        <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/RahulChandel-Coder1/needed-bike-9148" target="new"><strong >Source Code</strong></a></button>
+                                        <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://effervescent-moxie-7cbfe5.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                         </p>
+                                    </div>
+                                </div></div>
+                                <div class="owl-item cloned" style="width: 343.667px; margin-right: 30px;"><div class="item animated fadeInUp" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/calculator.JPG" style="height:200px"></image>
+                                         <h3>Masai Calculator</h3>
+                                       <p> This a simple calculator app in which we can perform all the mathematical operation <br>
+                                        Tech Stack : HTML | CSS | Javascript <br>
+                                       <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/masai-course/Akshata_fw19_0708/tree/master/unit-2/sprint-3/day-2/we" target="new"><strong >Source Code</strong></a></button>
+                                       <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://bespoke-sprite-f35541.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                        </p>
+                                    </div>
+                                </div></div><div class="owl-item active" style="width: 343.667px; margin-right: 30px;"><div class="item animated fadeInUp" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/youtube.JPG" style="height:200px"></image>
+                                        <h3>YouTube Clone Website</h3>
+                                        <p>Here in YouTube you can watch Videos of your choices without ads. <br>
+                                        Tech Stack : HTML | CSS | API | Local Storage | Javascript <br>
+                                       <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/masai-course/Akshata_fw19_0708/tree/master/unit-3/sprint-3/day-1/we" target="new"><strong >Source Code</strong></a></button>
+                                       <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://spectacular-kitten-6eb7a3.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                        </p>
+                                    </div>
+                                </div></div>
+                                <div class="owl-item active" style="width: 343.667px; margin-right: 30px;"><div class="item animated fadeInUp" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/NewsApp.png" style="height:200px"></image>
+                                        <h3>Bluefly Clone Website</h3>
+                                        <p> An E-commerce Website Where you can buy cloths,footwear,bags and many more...<br>
+                                         Tech Stack : HTML | CSS | Bootstrap | Javascript <br>
+                                        <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/masai-course/Akshata_fw19_0708/tree/master/unit-3/sprint-4/evaluation/unit-3-c4-template_685072" target="new"><strong >Source Code</strong></a></button>
+                                        <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://fanciful-panda-cee8d7.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                         </p>
+                                    </div>
+                                </div></div><div class="owl-item active" style="width: 343.667px; margin-right: 30px;"><div class="item animated fadeInUp" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/NeededBike.JPG" style="height:200px"></image>
+                                        <h3>Neede Bike website clone</h3>
+                                        <p> This project helps in scheduling time and date for any task<br>
+                                         Tech Stack : HTML | CSS | Local Storage | Javascript <br>
+                                       <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/RahulChandel-Coder1/needed-bike-9148" target="new"><strong >Source Code</strong></a></button>
+                                       <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href=",,,,,,,,,," target="new"><strong>Demo</strong></a></button>
+                                                        </p>
+                                    </div>
+                                </div></div><div class="owl-item cloned" style="width: 343.667px; margin-right: 30px;"><div class="item animated fadeInUp" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/youtube.JPG" style="height:200px"></image>
+                                         <h3>YouTube Clone Website</h3>
+                                         <p>Here in YouTube you can watch Videos of your choices without ads. <br>
+                                         Tech Stack : HTML | CSS | API | Javascript <br>
+                                        <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/masai-course/Akshata_fw19_0708/tree/master/unit-3/sprint-3/day-1/we" target="new"><strong >Source Code</strong></a></button>
+                                        <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://spectacular-kitten-6eb7a3.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                         </p>
+                                    </div>
+                                </div></div><div class="owl-item cloned" style="width: 343.667px; margin-right: 30px;"><div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/InternTheory.JPG" style="height:200px"></image>
+                                        <h3>Intern Theory Clone Website</h3>
+                                        <p>This project helps people in applying for an online internship <br>
+                                         Tech Stack : HTML | CSS |Local Storage | Javascript <br>
+                                        <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/vinitshahilverma/Intern-Theory-Project" target="new"><strong >Source Code</strong></a></button>
+                                        <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://ephemeral-pika-cd9a31.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                         </p>
+                                    </div>
+                                </div></div><div class="owl-item cloned" style="width: 343.667px; margin-right: 30px;"><div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <image src="images/calculator.JPG" style="height:200px"></image>
+                                        <h3>Masai Calculator</h3>
+                                        <p> This a simple calculator app in which we can perform all the mathematical operation <br>
+                                         Tech Stack : HTML | CSS | Javascript <br>
+                                       <button style="margin-right:20px;margin-top: 20px;"> <a style="color:black" href="https://github.com/masai-course/Akshata_fw19_0708/tree/master/unit-2/sprint-3/day-2/we" target="new"><strong >Source Code</strong></a></button>
+                                       <button  style="margin-right:20px;margin-top: 20px;">        <a style="color: black;" href="https://bespoke-sprite-f35541.netlify.app/" target="new"><strong>Demo</strong></a></button>
+                                                        </p>
+                                    </div>
+                                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br />
-          </div>
-          <div class="col-md-5 col-sm-12 main-img h-25">
-            <img src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" alt="mac" class="programmin-img"/>
-          </div>
-        </div>
-      </div>
-    </header>
+        </div></div>
+                           
+                           
+                    
+                    
+                    
+            
+            
 
-    <main id="main-screen">
-      <section class="section-1">
-        <div class="screen">
-          <div class="content-sec">
-            <p>
-              I'm a little bit of a geek - I have to be the first person to get
-              new things when they come out. I always want to buy and try new
-              gadgets.
-            </p>
-            <p class="text-right">- Tom Felton</p>
-          </div>
-        </div>
-        <div class="screen">
-          <div class="content-sec">
-            <p>
-              Someone who I would describe as a 'geek' or 'nerd' is a person who
-              loves something to its greatest extent and then look for other
-              people who love it the same way so they can celebrate loving it
-              together.
-            </p>
-            <p class="text-right">- Wil Wheaton</p>
-          </div>
-        </div>
-        <div class="screen">
-          <div class="content-sec">
-            <p>
-              No longer is a geek identifiable by a pale complexion,
-              black-rimmed glasses, a bowling shirt that says 'Nerd World
-              Order'. No, geeks are everywhere. And they're cool!
-            </p>
-            <p class="text-right">- Faith Salie</p>
-          </div>
-        </div>
-      </section>
+           <div class="section animated-row fp-section fp-table active fp-completely" data-section="slide04" data-fp-styles="null" data-anchor="slide04" style="height: 168px;"><div class="fp-tableCell" style="height: 168px;">
+               <div class="section-inner">
+                   <div class="row justify-content-center">
+                       <div class="col-md-7 wide-col-laptop">
+                           <div class="title-block animate" data-animate="fadeInUp">
+                               <span>My Skills</span>
+                               <h2>What i’m good?</h2>
+                           </div>
+                           <div class="skills-row view animated fadeInDown" data-animate="fadeInDown">
+                               <div class="row">
+                                   <div class="col-md-12 "> 
+                                  
+                                       <div>
+                                           
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star unchecked"></i>  
+                                           <h4>HTML </h4>  
+                                       </div>
+                                      
+                                       <div>
+                                           
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star unchecked"></i>  
+                                           <!-- <i class="fa fa-star checked"></i>  -->
+                                           <h4>CSS</h4>  
+                                       </div>
+                                    
+                                       <div>
+                                          
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <!-- <i class="fa fa-star checked"></i> -->
+                                           <i class="fa fa-star unchecked"></i>   
+                                           <i class="fa fa-star unchecked"></i>  
+                                            <h4>Java Script</h4>
+                                       </div>
+                                       
+                                       
+                                       <div>
+                                           
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star unchecked"></i> 
+                                           <h4>Java </h4> 
+                                       </div>
+                                       
+                                       <div>
+                                           
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star unchecked"></i>
+                                           <h4>Spring Boot</h4>
+                                             
+                                       </div>
 
-      <section id="main-about" class="section-2">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-md-6 col-12">
-              <div class="pray">
-                <img src="assets/my-pic.jpg" alt="my-pic" />
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="panel text-left">
-                <h2>About</h2>
-                <h3>Akshata Jinagond</h3>
-                <h4>Student at Masai School</h4>
-                <p>
-                  A passionate JAVA Back-End Developer, Strong in design and integration with intuitive problem-solving skills. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start the career as Java Developer with a reputed firm driven by technology
-                </p>
-                <h4>SKILLS</h4>
-                <p>
-                 Java, Javascript, HTML5, CSS3,<br />
-                  Spring Boot, hibernate, Aws, MySQL,<br />
-                  Git, Github, VSCode, Eclipse
-                </p>
+                                       <div>
+                                           
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star unchecked"></i>
+                                        <h4>SQL</h4>
+                                          
+                                    </div>
 
-                <!-- <h6>You can find me everywhere, <b>@</b></h6> -->
-                <br />
+                                    <div>
+                                           
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star unchecked"></i>
+                                        <h4>AWS</h4>
+                                          
+                                    </div>
 
-                <a class="btn btn-light px-3 py-1.5" href="assets/profile.pdf"
-                  >Download Resume</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                                    <div>
+                                           
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <h4>Visual Studio Code</h4>
+                                          
+                                    </div>
 
-      <section class="section-3 container-fluid p-0">
-        <div class="container-fluid text-center">
-          <div
-            class="numbers d-flex flex-md-row flex-wrap justify-content-center"
-          >
-            <div class="rect">
-              <h1>100</h1>
+                                    <div>
+                                           
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star unchecked"></i>
+                                        <h4>Eclipse</h4>
+                                          
+                                    </div>
 
-              <a href="www.linkedin.com/in/akshata-jinagond"
-                ><p><i class="fab fa-linkedin"></i> Linkedin</p></a
-              >
-            </div>
-            <div class="rect">
-              <h1>120</h1>
-              <a href="https://github.com/akshatajinagond91" target="_blank"
-                ><p><i class="fab fa-github"></i> Github</p></a
-              >
-            </div>
-            <div class="rect">
-              <h1>300</h1>
-              <a href="https://instagram.com/akshata_jinagond/" target="_blank"
-                ><p><i class="fab fa-instagram"></i> Instagram</p></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+                                      
+                                        
+                                       <!-- <div>
+                                           
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star unchecked"></i>
+                                           <i class="fa fa-star unchecked"></i>
+                                           <h4>Machine Learning</h4>  
+                                       </div>
+                                        <div>
+                                           
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star checked"></i>
+                                           <i class="fa fa-star unchecked"></i>
+                                           <i class="fa fa-star unchecked"></i>
+                                           <h4>Android Development</h4>  
+                                       </div>                 -->
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div></div>
 
-      <section id="main-project" class="section-4">
-        <div class="container text-center">
-          <h1 class="text-dark">Projects I have done</h1>
-          <p class="text-secondary">Kindly visit My Github Profile for My Projects: <a href="https://github.com/akshatajinagond91">akshatajinagond91</a></p>
-        </div>
-        <div class="cards">
-          <div class="d-flex flex-md-row flex-wrap justify-content-center">
-            <div
-              class="card mr-2 d-inline-block shadow-lg"
-              style="width: 18rem"
-            >
-              <img src="assets/background.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h4 class="card-title">My Portfolio</h4>
-                <p class="card-text">
-                  Created my personal/portfolio website using technologies like
-                  HTML5, CSS3, BOOTSTRAP v4.3 and JavaScript.
-                </p>
-              </div>
-              <div class="card-body">
-                <a
-                  href="https://github.com/akshatajinagond91/akshatajinagond91.github.io"
-                  target="_blank"
-                  class="card-link"
-                  >Git link</a>
-                
-              </div>
-            </div>
-            <div
-              class="card mr-2 d-inline-block shadow-lg"
-              style="width: 18rem"
-            >
-              <img
-                src="assets/background-def.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h4 class="card-title"><a href="https://ephemeral-pika-cd9a31.netlify.app/">Intern Theory</a> </h4>
-                <p class="card-text">This project helps in enrolling online internship. Developed by using CSS3, HTML5, Java Script</p>
-              </div>
-              <div class="card-body">
-                <a href="https://github.com/vinitshahilverma/Intern-Theory-Project" class="card-link">Git link</a>
-              </div>
-            </div>
-            <div
-              class="card mr-2 d-inline-block shadow-lg"
-              style="width: 18rem"
-            >
-              <img
-                src="assets/pic3-1.jpgi" 
-                
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h4 class="card-title">New Project 3</h4>
-                <p class="card-text">Not Listed Yet.</p>
-              </div>
-              <div class="card-body">
-                <a href="#" class="card-link">Git link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+           <!-- <div class="section animated-row fp-section fp-table" data-section="slide06" data-fp-styles="null" data-anchor="slide05" style="height: 168px;"><div class="fp-tableCell" style="height: 168px;">
+               <div class="section-inner">
+                   <div class="row justify-content-center">
+                       <div class="col-md-8 wide-col-laptop">
+                           <div class="title-block animate" data-animate="fadeInUp">
+                               <span>Experience</span>
+                               
+                           </div>
+                           <div class="gallery-section">
+                               <div class="gallery-list owl-carousel owl-loaded owl-drag">
+                                   
+                                   
+                                   
+                                   
+                               <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1122px;"><div class="owl-item active" style="width: 343.667px; margin-right: 30px;"><div class="item animate" data-animate="fadeInUp">
+                                       <div class="portfolio-item">
+                                           <div class="thumb">
+                                               <img src="images/internship.jpg" alt="">
+                                           </div>
+                                           <div class="thumb-inner animate" data-animate="fadeInUp">
+                                               <h4 style="margin-top: -2%;">Internship</h4>
+                                               <p style="margin-top: 0%;">Current working with Product manager of IPBurge, Developing Micro Influencer web portal to connect Influencers with the market place.</p>
+                                           </div>
+                                       </div>
+                                   </div></div><div class="owl-item active" style="width: 343.667px; margin-right: 30px;"><div class="item animate" data-animate="fadeInUp">
+                                       <div class="portfolio-item">
+                                           <div class="thumb">
+                                               <img src="images/web.png" alt="">
+                                           </div>
+                                           <div class="thumb-inner animate" data-animate="fadeInUp">
+                                               <h4 style="margin-top: -2%;">Client base Web potal</h4>
+                                               <p style="margin-top: 0%;">Developed client base web portal. That portal contains cost calculator which gives the cost of product based on raw material.</p>
 
-      <section id="main-contact" class="section-5">
-        <div class="contact">
-          <div class="form-container">
-            <h2>Contact Me</h2>
-            <form
-              method="POST"
-              action="https://formspree.io/akshatajinagond59@gmail.com"
-            >
-              <div class="input-field">
-                <input type="text" name="name" required="" />
-                <label>Name*</label>
-              </div>
-              <div class="input-field">
-                <input type="email" name="email" required="" />
-                <label>Email*</label>
-              </div>
-              <div class="input-field">
-                <textarea name="message" rows="5" required=""></textarea>
-                <label>Message*</label>
-              </div>
-              <input type="submit" name="" value="Send Message" class="btn" />
-            </form>
-          </div>
-        </div>
-        <div class="quote">
-          <h4>
-            Computers let you make mistake faster than any invention in human
-            history - with the posible exceptions of handguns and tequila.
-            <br />
-            <br /><b>- Someone on the Internet </b>
-          </h4>
-        </div>
-      </section>
-    </main>
+                                           </div>
+                                       </div>
+                                   </div></div><div class="owl-item active" style="width: 343.667px; margin-right: 30px;"><div class="item animate" data-animate="fadeInUp">
+                                       <div class="portfolio-item">
+                                           <div class="thumb">
+                                               <img src="images/certification.jpg" alt="">
+                                           </div>
+                                           <div class="thumb-inner animate" data-animate="fadeInUp">
+                                               <h4 style="margin-top: -2%;">Certifications</h4>
+                                               <p style="margin-top: 0%;">Certified by IIT BOMBAY for the C language &amp; OOP using Java language. Done 4 certification courses of WordPress on Udemy. </p>
+                                           </div>
+                                       </div>
+                                   </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div></div> -->
 
-    <footer>
-      <div class="container-fluid p-0">
-        <div class="row text-left">
-          <div class="col-md-9">
-            <h4 class="text-light">Thank you</h4>
-            <p class="text-muted">For any suggestion you can mail me</p>
-            <p class="gmail"> akshatajinagond59@gmail.com</p>
-          </div>
-          <div class="col-md-3 follow">
-            <h4 class="text-light">Follow Me</h4>
-            <p class="text-muted">Let us be social</p>
-            <div class="column text-light">
-              <!-- <a href="https://www.linkedin.com/in/akshatajinagond91/"
-                ><i class="fab fa-linkedin"></i
-              ></a> -->
-              <a href="https://www.github.com/akshatajinagond91" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="https://www.facebook.com/akshujinagond.jinagond" target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/akshata_jinagond/"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="https://www.twitter.com/akshata-jinagond" target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pt-5 text-center">
-        <p class="pt-2 text-muted">
-          Copyright ©2019 All rights reserved | This site is
-          <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by
-          <a class="sp" href="https://www.github.com/akshatajinagond91"
-            ><span> Akshata Jinagond </span></a
-          >
-        </p>
-      </div>
-    </footer>
+           
+           <div class="section animated-row fp-section fp-table row view animated fadeInDown"  data-animate="fadeInDown" data-section="slide07" data-fp-styles="null" data-anchor="slide06" style="height: 168px;"><div class="fp-tableCell" style="height: 168px;">
+            <!-- <div class="skills-row view animated fadeInDown"> -->
+               <div class="section-inner">
+                   <div class="row justify-content-center">
+                       <div class="col-md-7 wide-col-laptop">
+                           <div class="title-block animate" data-animate="fadeInUp">
+                               <span>Contact</span>
+                               <h2>Get In Touch!</h2>
+                           </div>
+                           <div class="contact-section">
+                               <div class="row">
+                                   <div class="col-md-6 animate" data-animate="fadeInUp">
+                                       <div class="contact-box">
+                                           <div class="contact-row">
+                                               <i class="fa fa-map-marker"></i> Belagavi-591131, Karnataka, India.
+                                           </div>
+                                           
+                                           <div class="contact-row">
+                                               <i class="fa fa-envelope"></i> <a href="https://mail.google.com/">akshatajinagond59@gmail.com</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-6 animate" data-animate="fadeInUp">
+                                       <form id="ajax-contact" method="post" action="#">
+                                           <div class="input-field">
+                                               <input type="text" class="form-control" name="name" id="name" required="" placeholder="Name">
+                                           </div>
+                                           <div class="input-field">
+                                               <input type="email" class="form-control" name="email" id="email" required="" placeholder="Email">
+                                           </div>
+                                           <div class="input-field">
+                                               <textarea class="form-control" name="message" id="message" required="" placeholder="Message"></textarea>
+                                           </div>
+                                           <button onclick="setTimeout(function () { window.location.reload(); }, 10)" class="btn" type="submit" value="Send">Submit</button>
+                                       </form>
+                                       <!-- <div id="form-messages" class="mt-3"></div> -->
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div></div>
+       </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="src/main.js"></script>
-  </body>
-</html>
+       <div  id="social-icons">
+           <div class="text-right">
+               <ul  class="social-icons">
+                   <li ><a href="https://twitter.com/" target="new" title="Twitter"><i  class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a></li>
+                   <li><a href="https://github.com/akshatajinagond91" target="new" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
+                   <li><a href="www.linkedin.com/in/akshata-jinagond" target="new" title="Linkedin"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                   <li><a href="https://www.instagram.com/akshata_jinagond/" target="new" title="Instagram"><i class="fa fa-instagram fa-2x"></i></a></li>
+               </ul>
+           </div>
+       </div>
+   </div>  
+
+   <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="js/jquery.js"></script>
+
+   <script src="js/bootstrap.min.js"></script>
+
+   <script src="js/fullpage.min.js"></script>
+
+   <script src="js/scrolloverflow.js"></script>
+
+   <script src="js/owl.carousel.min.js"></script>
+
+   <script src="js/jquery.inview.min.js"></script>
+
+   <script src="js/form.js"></script>
+
+   <script src="js/custom.js"></script>
+
+
+ 
+<div id="fp-nav" class="fp-right" style="margin-top: -63.5px; display: none;"><ul><li><a href="#slide01" class=""><span class="fp-sr-only">slide01</span><span></span></a></li><li><a href="#slide02" class=""><span class="fp-sr-only">slide02</span><span></span></a></li><li><a href="#slide03" class=""><span class="fp-sr-only">slide03</span><span></span></a></li><li><a href="#slide04" class="active"><span class="fp-sr-only">slide04</span><span></span></a></li><li><a href="#slide05" class=""><span class="fp-sr-only">slide05</span><span></span></a></li><li><a href="#slide06"><span class="fp-sr-only">slide06</span><span></span></a></li></ul></div></body></html>
+
+
