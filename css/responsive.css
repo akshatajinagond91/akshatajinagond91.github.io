@@ -487,3 +487,11 @@
 	color: #E0E0E0;
 	transform: translateY(-10px);
   }
+
+
+  /* calender css */
+
+  .contrib-column>span, .contrib-column>.text-muted{
+
+	color: white !important; 
+  }
