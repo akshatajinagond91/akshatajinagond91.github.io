@@ -1,3 +1,6 @@
+#gitstats{
+	margin-top: 20px;
+}
 @media only screen and (min-width: 768px) {
 	.nav-box {
 		display:block !important;
@@ -8,6 +11,7 @@
 	.welcome-title {
 		font-size: 100px;
 		margin-bottom:20px;
+		
 	}
 	.next-section {
 	/*	bottom: auto; */
@@ -67,6 +71,9 @@
 	}
 	.about-img {
 		margin-right:15px;
+	}
+	#gitstats{
+		margin-top: 20px;
 	}
 }
 @media only screen and (max-width: 1199px) {
