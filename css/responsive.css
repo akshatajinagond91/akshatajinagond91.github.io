@@ -1,6 +1,10 @@
 #gitstats{
 	margin-top: 20px;
 }
+.owl-carousel .owl-item{
+	width: 100% !important;
+
+}
 @media only screen and (min-width: 768px) {
 	.nav-box {
 		display:block !important;

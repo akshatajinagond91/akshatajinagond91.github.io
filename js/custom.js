@@ -79,10 +79,10 @@
         if ($('.services-list').length) {
             $('.services-list').owlCarousel({
                 loop: true,
-                nav: false,
+                nav: true,
                 dots: true,
-                items: 3,
-                margin: 30,
+                items: 2,
+                margin: 20,
                 autoplay: false,
                 smartSpeed: 700,
                 autoplayTimeout: 6000,
